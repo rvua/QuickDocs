@@ -12,6 +12,9 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.2",
-    "mongoose": "^6.2.1"
+    "mongoose": "^6.2.1",
+    "mongoose-type-email": "^1.1.2",
+    "mongoose-unique-validator": "^3.0.0",
+    "mongoose-validator": "^2.1.0"
   }
 }
