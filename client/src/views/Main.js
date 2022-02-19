@@ -5,12 +5,26 @@ import RecordBox from '../Components/RecordBox';
 const Main = (props) => {
     const [records, setRecords] = useState([])
 
-    
-
+    useEffect(() => {
+        axios.get("http://localhost:8000/api/records/findAll")
+            .then(res => {
+                console.log(res.data.results);
+                setRecords(res.data.results)
+            })
+            .catch(err => console.log(err))
+    }, [])
 
     return(
         <div>
-            Main Page
+            {
+                records.map((item, i) => {
+                    return(
+                        <div>
+                            <RecordBox key={i} pet={item}/>
+                        </div>
+                    )
+                })
+            }
         </div>
     )
 }

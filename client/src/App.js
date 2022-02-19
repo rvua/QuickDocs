@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <div className="nav">
-        <Link to="/" className="main-link">MERN CRUD</Link>
+        <Link to="/" className="main-link">QuickDocs</Link>
       </div>
 
       <Switch>
