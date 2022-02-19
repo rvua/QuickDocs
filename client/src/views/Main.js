@@ -20,7 +20,7 @@ const Main = (props) => {
                 records.map((item, i) => {
                     return(
                         <div>
-                            <RecordBox key={i} pet={item}/>
+                            <RecordBox key={i} record={item}/>
                         </div>
                     )
                 })
