@@ -1,5 +1,5 @@
 const RecordController = require("../controllers/record.controller");
-const Record = require("../models/record.model");
+//const Record = require("../models/record.model");
 
 module.exports = app => {
     app.get("/api/test", RecordController.testResponse);

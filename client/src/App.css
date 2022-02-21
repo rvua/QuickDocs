@@ -56,10 +56,14 @@
 }
 
 .table {
-  width: 723px;
+  width: 790px;
   margin-left: auto!important;
   margin-right: auto!important;
   margin: 3em 0;
   border: 1px solid rgba(34,36,38,.15);
-  border-radius: 0.28571429px;
+  border-radius: 1px;
+}
+
+.action-link{
+  text-decoration: none;
 }

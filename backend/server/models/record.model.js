@@ -47,7 +47,7 @@ const RecordSchema = new mongoose.Schema({
 
 }, {timestamps:true})
 
-RecordSchema.plugin(unique, { message: 'That {PATH} is already taken.' });
+//RecordSchema.plugin(unique, { message: 'That {PATH} is already taken.' });
 
 const Record = mongoose.model("Record", RecordSchema);
 

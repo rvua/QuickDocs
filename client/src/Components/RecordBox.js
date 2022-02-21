@@ -9,8 +9,8 @@ const RecordBox = ({record}) => {
             <td>{record.age}</td>
             <td>{record.gender}</td>
             <td>
-                <Link to={`/records/${record._id}`}>Details</Link> |
-                <Link to={`/records/${record._id}/edit`}>Edit</Link>
+                <Link to={`/records/${record._id}`} className="action-link">Details</Link> |
+                <Link to={`/records/${record._id}/edit`} className="action-link"> Edit</Link>
             </td>
         </tr>
     )
