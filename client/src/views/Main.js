@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import RecordBox from '../Components/RecordBox';
 
-const Main = (props) => {
+const Main = () => {
     const [records, setRecords] = useState([])
 
     useEffect(() => {
@@ -15,16 +15,23 @@ const Main = (props) => {
     }, [])
 
     return(
-        <div>
-            {
-                records.map((item, i) => {
-                    return(
-                        <div>
-                            <RecordBox key={i} record={item}/>
-                        </div>
-                    )
-                })
-            }
+        <div className="table-responsive">
+            <table className="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {records.map((item, i) => (
+                        <RecordBox key={i} record={item}/>
+                    ))}
+                </tbody>
+            </table>
         </div>
     )
 }
