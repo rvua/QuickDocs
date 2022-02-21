@@ -49,27 +49,27 @@ const Edit = (props) => {
 
     return(
         <div>
-            <div>
-                <form onSubmit={onSubmitHandler} className="mx-auto w-50">
-                    <div className="form-group">
+            <div className="content">
+                <form onSubmit={onSubmitHandler} className="create-form mx-auto">
+                    <div className="form-group mb-3 mt-3">
                         <label htmlFor="name">Name:</label>
                         <input onChange={onChangeHandler} value={form.name} className="form-control" type="text" name="name" placeholder="Name"/>
                         <span className="alert-danger">{errors.name && errors.name.message}</span>
                     </div>
 
-                    <div className="form-group">
+                    <div className="form-group mb-3 mt-3">
                         <label htmlFor="type">Email:</label>
                         <input onChange={onChangeHandler} value={form.email} className="form-control" type="text" name="email" placeholder="Email"/>
                         <span className="alert-danger">{errors.email && errors.email.message}</span>
                     </div>
 
-                    <div className="form-group">
+                    <div className="form-group mb-3 mt-3">
                         <label htmlFor="age">Age:</label>
                         <input onChange={onChangeHandler} value={form.age} type="number" name="age" className="form-control" min={5} max={130} placeholder="5"/>
                         <span className="alert-danger">{errors.age && errors.age.message}</span>
                     </div>
 
-                    <div className="form-group">
+                    <div className="form-group mb-3 mt-3">
                         <label htmlFor="gender">Gender</label>
                         <select onChange={onChangeHandler} value={form.gender} name="gender" className="form-select">
                             {
@@ -81,7 +81,7 @@ const Edit = (props) => {
                         <span className="alert-danger">{errors.gender && errors.gender.message}</span>
                     </div>
                     
-                    <input type="submit" className="btn btn-success"/>
+                    <input type="submit" className="submit btn btn-success mb-3 mt-3"/>
                 </form>
             </div>
         </div>

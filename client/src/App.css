@@ -49,8 +49,7 @@
 .main-link{
   text-decoration: none;
   font-size: 30px;
-  
-  color: rgb(3, 180, 250);
+  color: rgb(3, 180, 250)!important;
   font-weight: bold;
   margin: auto;
 }
@@ -66,4 +65,15 @@
 
 .action-link{
   text-decoration: none;
+}
+
+.create-form{
+  margin: 3em 0;
+  border: 1px solid rgba(34,36,38,.15);
+  border-radius: 10px;
+  width: 35%;
+}
+
+.submit{
+  width: 45%;
 }

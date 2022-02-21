@@ -35,8 +35,8 @@ const Create = (props) => {
 
     return(
         <div>
-            <div>
-                <form onSubmit={onSubmitHandler} className="mx-auto w-50">
+            <div className="content">
+                <form onSubmit={onSubmitHandler} className="create-form mx-auto w-50">
                     <div className="form-group">
                         <label htmlFor="name">Name:</label>
                         <input onChange={onChangeHandler} className="form-control" type="text" name="name" placeholder="Name"/>
@@ -67,7 +67,7 @@ const Create = (props) => {
                         <span className="alert-danger">{errors.gender && errors.gender.message}</span>
                     </div>
                     
-                    <input type="submit" className="btn btn-success"/>
+                    <input type="submit" className="btn btn-success m"/>
                 </form>
             </div>
         </div>
