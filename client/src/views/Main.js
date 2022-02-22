@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import RecordBox from '../Components/RecordBox';
 
 const Main = () => {
@@ -16,7 +17,7 @@ const Main = () => {
 
     return(
         <div className="table-responsive">
-            <table className="table">
+            <table className="table table-hover">
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -30,6 +31,9 @@ const Main = () => {
                     {records.map((item, i) => (
                         <RecordBox key={i} record={item}/>
                     ))}
+                    <tr>
+                        <td><Link to={"/records/create"} className="CreateNewHomeLink">Create New Record</Link></td>
+                    </tr>
                 </tbody>
             </table>
         </div>

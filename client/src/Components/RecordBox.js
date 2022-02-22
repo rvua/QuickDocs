@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const RecordBox = ({record}) => {
+    
     return (
         <tr>
             <td>{record.name}</td>

@@ -71,9 +71,36 @@
   margin: 3em 0;
   border: 1px solid rgba(34,36,38,.15);
   border-radius: 10px;
-  width: 35%;
+  width: 30%;
+}
+
+.createInputs{
+  margin: auto;
+  width: 70%;
 }
 
 .submit{
   width: 45%;
 }
+
+.viewRecordHeader{
+  margin: 3em 0;
+  font-weight: bolder;
+}
+
+.viewRecordContent{
+  border: 1px solid rgba(34,36,38,.15);
+  border-radius: 10px;
+  width: 25%;
+}
+
+.viewRecordContentGrid{
+  border: 1px solid rgba(34,36,38,.15);
+  border-radius: 10px;
+  width: 50%;
+}
+
+.CreateNewHomeLink{
+  text-decoration: none;
+}
+
