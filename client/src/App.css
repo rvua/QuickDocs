@@ -104,3 +104,12 @@
   text-decoration: none;
 }
 
+.mainTable{
+  text-align: center;
+}
+
+.deleteBtn{
+  color: #f00808;
+  border: none;
+  background: none;
+}
