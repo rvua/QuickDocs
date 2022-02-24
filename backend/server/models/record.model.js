@@ -9,14 +9,6 @@ const emailValidator = [
     })
   ];
 
-// const ageValidator = [
-//     validate({
-//         validator: 'isLength',
-//         arguments: [5, 130],
-//         message: 'You must be at least 5 years old and younger than 130'
-//     })
-// ]
-
 const RecordSchema = new mongoose.Schema({
     // name, email, age, gender
     name: {
@@ -37,7 +29,6 @@ const RecordSchema = new mongoose.Schema({
         max: 130,
         default: 18,
         required: [true, "Please Enter Age"],
-        //validate: ageValidator
     },
     gender: {
         type: String,
