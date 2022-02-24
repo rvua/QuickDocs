@@ -1,0 +1,35 @@
+{
+  "name": "records_project",
+  "version": "1.0.0",
+  "description": "Records Mern Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rvua/Records.git"
+  },
+  "keywords": [
+    "heroku",
+    "mern",
+    "records"
+  ],
+  "author": "rvua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rvua/Records/issues"
+  },
+  "homepage": "https://github.com/rvua/Records#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.3",
+    "mongoose-type-email": "^1.1.2",
+    "mongoose-unique-validator": "^3.0.0",
+    "mongoose-validator": "^2.1.0"
+  },
+  "engines": {
+    "node": "14.15.4"
+  }
+}
